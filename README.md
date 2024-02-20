@@ -23,7 +23,7 @@ A **ONG Patinhas** tem como missão mostrar animais para adoção e contribuir s
 
 
 
-### Pessoas Envolivdas
+### Pessoas Envolvidas
 
 - [Michele Rodrigues](https://github.com/MicheleRodriguesc)
 - [Fernanda Costa](https://github.com/fernandacostads)
