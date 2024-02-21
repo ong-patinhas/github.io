@@ -1,0 +1,10 @@
+# Arquivos de configuração locais
+.vscode/
+.idea/
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Dependências geradas
+node_modules/

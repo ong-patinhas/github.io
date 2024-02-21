@@ -30,4 +30,4 @@ A **ONG Patinhas** tem como missão mostrar animais para adoção e contribuir s
 - [Elton Peixoto](https://github.com/elton-peixoto-lu)
 - [Day Morais](https://github.com/DayMorais)
 - [Priscila Dias](https://github.com/username)
-- [Gustavo de Matos e Silva](https://github.com/username)
+- [Gustavo de Matos e Silva](https://github.com/658936gu)
