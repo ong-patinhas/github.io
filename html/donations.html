@@ -114,12 +114,8 @@
             </select>
         </div>
         <div id="form_pix" class="form-option">
-            <div class="form-group">
-                <label for="pix">Chave Pix da Instituição:</label>
-                <input type="text" id="pix" name="pix">
-            </div>
-            <div class="form-group">
-                <button type="submit">Doar Pix</button>
+            <div class="pix-info">
+                Chave Pix: 123456789-0
             </div>
         </div>
         <div id="form_cartao" class="form-option">
@@ -146,28 +142,7 @@
     © 2024 ONG SOS Patinhas. Todos os direitos reservados.
 </div>
 
-<script>
-    function toggleForm() {
-        var tipoPagamento = document.getElementById('tipo_pagamento').value;
-        var formPix = document.getElementById('form_pix');
-        var formCartao = document.getElementById('form_cartao');
-        var watermark = document.querySelector('.cat-img');
-
-        if (tipoPagamento === 'pix') {
-            formPix.classList.add('show');
-            formCartao.classList.remove('show');
-            watermark.style.display = 'none';
-        } else if (tipoPagamento === 'cartao') {
-            formPix.classList.remove('show');
-            formCartao.classList.add('show');
-            watermark.style.display = 'none';
-        } else {
-            formPix.classList.remove('show');
-            formCartao.classList.remove('show');
-            watermark.style.display = 'block';
-        }
-    }
-</script>
+<script src="../js/scriptdo.js"></script>
 </body>
 
 </html>
