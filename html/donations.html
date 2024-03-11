@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ONG SOS Patinhas - Formulário de Doação</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../font/fonts.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/utility.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            color: #666;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        img.cat-img {
+            display: block;
+            margin: auto;
+            width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            color: #666;
+        }
+
+        .form-option {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h2>Doar para a SOS Patinhas</h2>
+    <form action="/processar_doacao.php" method="POST" id="form_doacao">
+        <div class="form-group">
+            <label for="tipo_pagamento">Tipo de Pagamento:</label>
+            <select id="tipo_pagamento" name="tipo_pagamento" onchange="toggleForm()" required>
+                <option value="selecione">Selecione...</option>
+                <option value="pix">Pix</option>
+                <option value="cartao">Cartão de Crédito</option>
+            </select>
+        </div>
+        <div id="form_pix" class="form-option">
+            <div class="form-group">
+                <label for="pix">Chave Pix da Instituição:</label>
+                <input type="text" id="pix" name="pix">
+            </div>
+            <div class="form-group">
+                <button type="submit">Doar Pix</button>
+            </div>
+        </div>
+        <div id="form_cartao" class="form-option">
+            <div class="form-group">
+                <label for="cartao">Número do Cartão de Crédito:</label>
+                <input type="text" id="cartao" name="cartao">
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv">
+            </div>
+            <div class="form-group">
+                <label for="expiracao">Data de Expiração:</label>
+                <input type="text" id="expiracao" name="expiracao" placeholder="MM/AA">
+            </div>
+            <div class="form-group">
+                <button type="submit">Doar Cartão</button>
+            </div>
+        </div>
+    </form>
+    <img class="cat-img" src="../img/gato-dinheiro.jpg" alt="Gato com dinheiro">
+</div>
+<div class="footer">
+    © 2024 ONG SOS Patinhas. Todos os direitos reservados.
+</div>
+
+<script>
+    function toggleForm() {
+        var tipoPagamento = document.getElementById('tipo_pagamento').value;
+        var formPix = document.getElementById('form_pix');
+        var formCartao = document.getElementById('form_cartao');
+        var watermark = document.querySelector('.cat-img');
+
+        if (tipoPagamento === 'pix') {
+            formPix.classList.add('show');
+            formCartao.classList.remove('show');
+            watermark.style.display = 'none';
+        } else if (tipoPagamento === 'cartao') {
+            formPix.classList.remove('show');
+            formCartao.classList.add('show');
+            watermark.style.display = 'none';
+        } else {
+            formPix.classList.remove('show');
+            formCartao.classList.remove('show');
+            watermark.style.display = 'block';
+        }
+    }
+</script>
+</body>
+
+</html>
