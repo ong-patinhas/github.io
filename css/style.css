@@ -761,6 +761,10 @@ background: #fcd787 !important;
 .blog-item-bottom a:hover{
   opacity: 0.8;
 }
+h1, h2, h3, h4, h5, h6 , b, p, li{
+  text-align: center;
+}
+
 
 /* ### ABOUT PAGE ### */
 /* about */
@@ -770,6 +774,7 @@ background: #fcd787 !important;
 .about-right h2{
   margin-bottom: 2.5rem;
 }
+
 
 /* facts */
 #facts{
