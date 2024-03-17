@@ -878,23 +878,67 @@ header.header-sm {
 }
 
 .container_about_team{
+  display:flex;
+  justify-content: center;
+  gap: 9%;
+  margin: 5%;
+ 
+}
+
+.team_title{
   display: flex;
+  font-size: 3.5rem;
+  font-family: "Raleway", sans-serif;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.container_about_team_section{
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+
 }
 
 .people{
   display: flex;
+  flex-direction: column;
+  padding: 10rem 0 15rem 0;
+  align-items: center;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "Raleway", sans-serif;
 }
 
+.people_text{
+  justify-content: flex-start;
+}
+
+.people_name{
+  color: var(--light-yellow);
+  font-style:oblique;
+  font-size: 2.5rem;
+}
+
+
 .container_about_team_message{
-  display: block;
+  display: flex;
   background-image: url(../images/about-3.jpg);
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding: 44rem;
-  margin: 0 0;
+  justify-content: flex-end;
+  padding: 44rem 0 44rem 0;
   color: #fff;
   padding: 32rem 0 32rem 0;
+}
+
+.container_about_team_message_text{
+  display: flex;
+  text-align: right;
+  margin-right: 6rem;
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 3rem;
+  font-style: italic;
 }
 
 .container_about_history{
@@ -905,16 +949,17 @@ header.header-sm {
 .container_about_history_text{
   display: flex;
   flex-direction: column;
-  margin: 5% 3% 5% 1%;
+  margin: 8% 5% 10% 0%;
   justify-content: space-between;
   font-size: 2rem;
   font-family: "Raleway", sans-serif;
   line-height: 3rem;
+  text-align: justify;
 }
 
 .container_about_history_img{
   width: 45%;
-  margin: 5% 3%;
+  margin: 8% 6% 10% 4%;
   border-radius: 5% 3%;
 }
 
@@ -926,7 +971,8 @@ header.header-sm {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #fff;
-  margin-top: 8%;
+  margin-top: 3%;
+  margin-right: 75%;
   background-color: var(--light-yellow);
   align-items: center;
 }
