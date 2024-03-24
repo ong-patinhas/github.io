@@ -763,13 +763,21 @@ background: #fcd787 !important;
 }
 h1, h2, h3, h4, h5, h6 , b, p, li{
   text-align: center;
+  
 }
 .container {
   max-width: 1350px;
   padding: 0 1rem;
   margin: 0 auto;
+  
 }
-
+.about_btn{
+  background-color: var(--green);
+  color: #ffffff;
+  padding: 0.5rem;
+  left: 50%;
+  right:80%;
+  }
 
 
 /* ### ABOUT PAGE ### */
