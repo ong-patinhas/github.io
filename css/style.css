@@ -14,23 +14,23 @@
   padding: 1rem 0;
   z-index: 999;
 }
-.navbar .container {
+.navbar .container{
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.site-brand {
+.site-brand{
   color: #fff;
   font-size: 2.4rem;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   opacity: 0.95;
   width: 500px;
 }
-.site-brand span {
+.site-brand span{
   font-weight: 300;
 }
-#navbar-show-btn {
+#navbar-show-btn{
   background: transparent;
   color: #fff;
   font-size: 2rem;
@@ -40,12 +40,12 @@
   transition: var(--trans);
   border: none;
 }
-#navbar-show-btn:hover {
+#navbar-show-btn:hover{
   opacity: 1;
 }
 
 /* navbar side menu */
-#navbar-collapse {
+#navbar-collapse{
   background-color: var(--green);
   position: fixed;
   top: 0;
@@ -54,19 +54,19 @@
   height: 100%;
   padding: 2rem;
   -webkit-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
   -webkit-transition: var(--trans);
   -o-transition: var(--trans);
   transition: var(--trans);
 }
-.navbar-collapse-rmw {
+.navbar-collapse-rmw{
   /* js related */
-  -webkit-transform: translateX(0) !important;
-  -ms-transform: translateX(0) !important;
-  transform: translateX(0) !important;
+  -webkit-transform: translateX(0)!important;
+      -ms-transform: translateX(0)!important;
+          transform: translateX(0)!important;
 }
-#navbar-close-btn {
+#navbar-close-btn{
   background: none;
   color: #fff;
   width: 35px;
@@ -81,17 +81,17 @@
   top: 2rem;
   border: none;
 }
-#navbar-close-btn:hover {
+#navbar-close-btn:hover{
   background-color: #fff;
   color: var(--green);
 }
-.navbar-nav {
+.navbar-nav{
   margin-top: 5rem;
 }
-.nav-item {
+.nav-item{
   margin: 1.6rem 0;
 }
-.nav-link {
+.nav-link{
   color: #fff;
   font-size: 1.2rem;
   -webkit-transition: var(--trans);
