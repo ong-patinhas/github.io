@@ -1,107 +1,366 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>ONG Patinhas</title>
-               
-        <link rel = "stylesheet" href = "font/fonts.css">
-        <link rel = "stylesheet" href = "css/style.css">
-    <body>
-        <nav class = "navbar">
-            <div class = "container flex">
-                <a href = "index.html" class = "site-brand">
-                    ONG<span>Patinhas</span>
-                </a>
 
-                <button type = "button" id = "navbar-show-btn" class = "flex">
-                    <i class = "fas fa-bars"></i>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ONG SOS Patinhas</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../font/fonts.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/utility.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="index.html" class="site-brand">
+                ONG <span>SOS Patinhas</span>
+            </a>
+
+            <button type="button" id="navbar-show-btn" class="flex">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div id="navbar-collapse">
+                <button type="button" id="navbar-close-btn" class="flex">
+                    <i class="fas fa-times"></i>
                 </button>
-                <div id = "navbar-collapse">
-                    <button type = "button" id = "navbar-close-btn" class = "flex">
-                        <i class = "fas fa-times"></i>
-                    </button>
-                    <ul class = "navbar-nav">
-                        <li class = "nav-item">
-                            <a href = "index.html" class = "nav-link">Home</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "gallery.html" class = "nav-link">Galeria</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "blog.html" class = "nav-link">Blog</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "about.html" class = "nav-link">Sobre</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "contact.html" class = "nav-link">Contato</a>
-                        </li>
-                    </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <header class="flex">
+        <div class="container">
+            <div class="header-title">
+                <h1>“A compaixão para com os animais é das mais nobres virtudes da
+                    natureza humana. ”</h1>
+                <!-- <p>Existem 30 milhões de animais abandonados no Brasil.
+                    Animais de estimação são capazes de te dar amor, sem esperar nada em troca. Por isso são considerados, de fato, nossos melhores amigos. Mas muitos deles nunca se sentiram cuidados e amados.
+                </p> -->
+            </div>
+            <div class="header-form">
+                <h2>Ajude a ONG SOS Patinhas</h2>
+                <span>Animais de estimação são capazes de dar amor, sem esperar nada em troca. Por isso são considerados, de fato, nossos melhores amigos. Mas muitos deles nunca se sentiram cuidados e amados.
+                </span>
+                <form class="flex">                    
+                    <input type="number" class="form-control" placeholder="Valor (R$)">
+                    <input type="submit" class="btn" value="Doar">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section id="featured" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">Conheça mais sobre nossas ações</span>
+                <h2 class="lg-title">Como atuamos</h2>
+            </div>
+
+            <div class="featured-row">
+                <div class="featured-item my-2 shadow">
+                    <img src="../img/action-1.jpg" alt="">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-paw"></i>
+                            Suporte Médico
+                        </span>
+                        <div>
+                            <p class="text">Oferecemos suporte médico para animais, garantindo cuidados especializados
+                                para sua saúde.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="featured-item my-2 shadow">
+                    <img src="../img/action-2.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-paw"></i>
+                            Campanhas de Castração
+                        </span>
+                        <div>
+                            <p class="text">Promovemos campanhas de castração como medida efetiva para controlar a
+                                população de animais abandonados, prevenindo o surgimento de novos casos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="../img/action-3.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-paw"></i>
+                            Eventos de adoção
+                        </span>
+                        <div>
+                            <p class="text">Organizamos eventos de adoção, proporcionando oportunidades para que animais
+                                abandonados encontrem lares amorosos e responsáveis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="../img/action-4.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-paw"></i>
+                            Ações Educativas
+                        </span>
+                        <div>
+                            <p class="text">Realizamos campanhas educativas para conscientizar a comunidade sobre a
+                                importância da adoção responsável, cuidados básicos e respeito aos animais.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="../img/action-5.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-paw"></i>
+                            Voluntariado
+                        </span>
+                        <div>
+                            <p class="text">Promovemos o voluntariado como uma forma essencial de contribuir para o
+                                bem-estar
+                                dos animais.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="../img/action-6.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-paw"></i>
+                            Doações
+                        </span>
+                        <div>
+                            <p class="text">Sua contribuição faz com que possamos continuar salvando vidas e oferecer
+                                cuidados
+                                essenciais aos animais abandonados. Seja parte dessa missão!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-<footer class = "py-4">
-            <div class = "container footer-row">
-                <div class = "footer-item">
-                    <a href = "index.html" class = "site-brand">
-                        ONG<span>Patinhas</span>
-                    </a>
-                    <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptates maiores nam vitae iusto. Placeat rem sint voluptas natus exercitationem autem quod neque, odit laudantium reiciendis ipsa suscipit veritatis voluptate.</p>
+        </div>
+    </section>
+    <!-- end of featured section -->
+
+    <!-- services section -->
+    <section id="services" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">Dados do Instituto Pet Brasil (IBP)</span>
+                <h2 class="lg-title">Existem 30 milhões de animais abandonados no Brasil</h2>
+            </div>
+
+            <div class="services-row">
+                <div class="services-item">
+                    <span class="services-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </span>
+                    <h3>60% dos animais</h3>
+                    <p class="text"><strong>60%</strong> dos animais resgatados por ONGs, foram salvos de
+                        situações de maus-tratos. </p>
+                    <a href="http://institutopetbrasil.com/" class="btn">Ver mais</a>
                 </div>
 
-                <div class = "footer-item">
-                    <h2>Nos sigas nas redes: </h2>
-                    <ul class = "social-links">
-                        <li>
-                            <a href = "#">
-                                <i class = "fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href = "#">
-                                <i class = "fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href = "#">
-                                <i class = "fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href = "#">
-                                <i class = "fab fa-pinterest"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href = "#">
-                                <i class = "fab fa-google-plus"></i>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="services-item">
+                    <span class="services-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </span>
+                    <h3>8.8M</h3>
+                    <p class="text">Mais de <strong> 8 milhões</strong> de animais têm um tutor, mas vivem em condições de
+                        vulnerabilidade.</p>
+                    <a href="http://institutopetbrasil.com/" class="btn">Ver mais</a>
                 </div>
 
-                <div class = "footer-item">
-                    <h2>Exemplo de texto:</h2>
-                    <ul>
-                        <li><a href = "#">Mudar</a></li>
-                        <li><a href = "#">esse texto</a></li>
-                        <li><a href = "#">para algo</a></li>
-                        <li><a href = "#">que faça </a></li>
-                        <li><a href = "#">sentido ao projeto</a></li>
-                    </ul>
-                </div>
-
-                <div class = "subscribe-form footer-item">
-                    <h2>Se inscreva para receber novidades!</h2>
-                    <form class = "flex">
-                        <input type = "email" placeholder="Enter Email" class = "form-control">
-                        <input type = "submit" class = "btn" value = "Subscribe">
-                    </form>
+                <div class="services-item">
+                    <span class="services-icon">
+                        <i class="fas fa-ribbon"></i>
+                    </span>
+                    <h3>4 vezes menor</h3>
+                    <p class="text">Em média, a expectativa de vida dos pets abandonados é <strong>4 vezes</strong>  menor.</p>
+                    <a href="http://institutopetbrasil.com/" class="btn">Ver mais</a>
                 </div>
             </div>
-        </footer>
+        </div>
+    </section>
+    <!-- end of services section -->
 
-    </body>
+    <!-- testimonials section -->
+    <section id="testimonials" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">O que diz quem adota</span>
+                <h2 class="lg-title">Testemunhos</h2>
+            </div>
+
+            <div class="test-row">
+                <div class="test-item">
+                    <p class="text">Adotei um lindo gato da ONG e minha vida mudou completamente. Ele trouxe alegria, amor e
+                        companhia para minha casa. Estou eternamente grato por todo o trabalho incrível que a
+                        organização faz. </p>
+                    <div class="test-item-info">
+                        <img src="../img/test-1.jpg" alt="testimonial">
+                        <div>
+                            <h3>Carlos Silva</h3>
+                            <p class="text">Fortaleza, CE</p>
+                            <h5>Adotou um pet em 2023</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-item">
+                    <p class="text">Adotar meu cão da ONG foi a melhor decisão que já tomei. Ele não só preencheu meu coração
+                        de amor, mas também me ensinou sobre a importância da adoção responsável. Obrigado por
+                        trazer esse ser maravilhoso para a minha vida.
+                    </p>
+                    <div class="test-item-info">
+                        <img src="../img/test-2.jpg" alt="testimonial">
+                        <div>
+                            <h3>Marcelo Oliveira</h3>
+                            <p class="text">Fortaleza, CE</p>
+                            <h5>Adotou um pet em 2023</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-item">
+                    <p class="text">Estava com receio de adotar um cachorro mas foi a melhor decisão que tomei. Ele é super companheiro e enche minha casa de vida e felicidade. Gratidão por tomarem conta do meu filho antes de mim!</p>
+                    <div class="test-item-info">
+                        <img src="../img/test-3.jpg" alt="testimonial">
+                        <div>
+                            <h3>Jéssica Sousa</h3>
+                            <p class="text">Fortaleza, CE</p>
+                            <h5>Adotou um pet em 2022</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of testimonials section -->
+
+    <!-- video section -->
+    <section id="video">
+        <div class="video-wrapper flex">
+            <video loop>
+                <source src="../video/video-section.mp4" type="video/mp4">
+            </video>
+            <button type="button" id="play-btn">
+                <i class="fas fa-play"></i>
+            </button>
+        </div>
+    </section>
+    <!-- end of video section -->
+
+    <!-- footer -->
+    <footer class="py-4">
+        <div class="container footer-row">
+            <div class="footer-item">
+                <a href="index.html" class="site-brand">
+                    ONG<span> SOS Patinhas</span>
+                </a>
+                <p class="text">
+                    Atuamos no resgate e cuidado de cães e gatos abandonados e vítimas de maus tratos. ⁣⁣Vamos acolher o amor e proteger nossos animais. O amor é uma ferramenta da humanidade, mas não há quem compreenda mais sobre este sentimento do que nossos amigos de quatro patas.
+                    </p>
+            </div>
+
+            <div class="footer-item">
+                <h2>Nos siga: </h2>
+                <ul class="social-links">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2>Mapa do site:</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Galeria</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="subscribe-form footer-item">
+                <h2>Se inscreva para conhecer mais sobre nosso trabalho!</h2>
+                <form class="flex">
+                    <input type="email" placeholder="Seu melhor Email" class="form-control">
+                    <input type="submit" class="btn" value="Inscrever-se">
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="../js/script.js"></script>
+    <script>
+        let video = document.querySelector('.video-wrapper video');
+        document.getElementById('play-btn').addEventListener('click', () => {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+    </script>
+</body>
+
 </html>

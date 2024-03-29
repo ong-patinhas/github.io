@@ -8,7 +8,6 @@
  * 2. Impede ajustes no tamanho da fonte após alterações de orientação no iOS.
  */
 
-
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -350,4 +349,3 @@ template {
 [hidden] {
   display: none;
 }
-

@@ -149,6 +149,7 @@ header {
   letter-spacing: 2px;
   -webkit-animation: bounce-in-top 1.1s both;
   animation: bounce-in-top 1.1s both;
+  margin-top: 15rem;
 }
 .header-title p {
   margin: 1.8rem auto;
@@ -272,14 +273,18 @@ header {
   background: rgba(0, 0, 0, 0.5);
   padding: 2rem;
   border-radius: 0.2rem;
-  max-width: 500px;
+  max-width: 850px;
   /* padding: 0 1rem; */
   margin: 0 auto;
-  width: 50%;
+  width: 75%;
 }
 .header-form h3 {
   font-size: 1.2rem;
 }
+.header-form span {
+  font-size: 1.3rem;
+}
+
 .header-form form {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -309,7 +314,6 @@ header {
 .header-form input:not([type="submit"])::placeholder {
   color: #fff;
 }
-
 ::-webkit-calendar-picker-indicator {
   -webkit-filter: invert(1);
   filter: invert(1);
@@ -455,6 +459,10 @@ header {
 
 /* testimonials */
 #testimonials {
+  background-color: var(--yellow);
+}
+.test-item {
+  border: 2px solid var(--yellow);
   background-color: var(--light-yellow);
 }
 .test-item {
