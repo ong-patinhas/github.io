@@ -712,6 +712,30 @@ background: #fcd787 !important;
 
 /* ### BLOG PAGE ### */
 /* blog */
+.article__text {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 10px 0 15px;
+  margin: 0;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.article__accordion {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2cb67d;
+  transition: opacity 0.7s linear;
+  align-self: flex-start;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 #blog{
   background-color: var(--light-yellow);
 }
@@ -761,10 +785,10 @@ background: #fcd787 !important;
 .blog-item-bottom a:hover{
   opacity: 0.8;
 }
-h1, h2, h3, h4, h5, h6 , b, p, li{
+/* h1, h2, h3, h4, h5, h6 , b, p, li{
   text-align: center;
   
-}
+} */
 .container {
   max-width: 1350px;
   padding: 0 1rem;
@@ -990,8 +1014,9 @@ depois criar um css a parte pra colocar isso
       gap: 2rem;
   }
 
+  /* Aqui muda o layout do blog */
   .popular-row, .blog-row{
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(1, 1fr);
   }
   .about-row{
       -webkit-box-align: center;

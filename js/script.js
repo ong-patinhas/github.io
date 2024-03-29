@@ -36,3 +36,17 @@ window.addEventListener('resize', () => {
         document.body.classList.remove("resize-animation-stopper");
     }, 400);
 });
+
+// Function to loading blog details
+const article = document.querySelectorAll(".article_expandable");
+article.forEach((story) => {
+  const button = story.querySelector(".article__accordion");
+  button.addEventListener("click", () => {
+    const paragraph = story.querySelector(".article__hidden-div");
+    paragraph.classList.toggle("hidden");
+    const text = paragraph.classList.contains("hidden")
+      ? "Ler mais"
+      : "Fechar";
+    button.textContent = text;
+  });
+});
