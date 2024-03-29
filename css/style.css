@@ -870,6 +870,30 @@ header.header-sm {
 
 /* ### BLOG PAGE ### */
 /* blog */
+.article__text {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 10px 0 15px;
+  margin: 0;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.article__accordion {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2cb67d;
+  transition: opacity 0.7s linear;
+  align-self: flex-start;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 #blog {
   background-color: var(--light-yellow);
 }
