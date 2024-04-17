@@ -1234,3 +1234,18 @@ header.header-sm {
   display: block;
   margin-bottom: 1rem;
 }
+#form-container-contact {
+  right: 10rem;
+  top: 32rem;
+  width: 300px;
+  padding: 20px;
+  background: #ffffff;
+  color: green;
+  border-radius: 5px;
+  transition: opacity 1s ease;
+  opacity: 1;
+}
+
+.hidden-contact {
+  opacity: 0;
+}
