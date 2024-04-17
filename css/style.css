@@ -644,6 +644,7 @@ header.header-sm {
 
 #gallery {
   /* background-color: #fcd787ab; */
+  padding: 5rem 10rem;
   background-color: var(--yellow);
 }
 
