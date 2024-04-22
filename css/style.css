@@ -636,6 +636,25 @@ footer .site-brand {
   opacity: 0.3;
 }
 
+#form-container-footer {
+  /* margin: 5px; */
+  position: absolute;
+  right: 10rem;
+  top: 2rem;
+  width: 300px;
+  padding: 20px;
+  background: #ffffff;
+  color: green;
+  /* border: 2px solid #ccc; */
+  border-radius: 5px;
+  transition: opacity 1s ease;
+}
+
+.hidden-form-footer {
+  opacity: 0;
+}
+
+
 /* ### GALLERY PAGE ### */
 header.header-sm {
   min-height: 60vh;
@@ -644,6 +663,7 @@ header.header-sm {
 
 #gallery {
   /* background-color: #fcd787ab; */
+  padding: 5rem 10rem;
   background-color: var(--yellow);
 }
 
@@ -1233,4 +1253,22 @@ header.header-sm {
   font-size: 1.2rem;
   display: block;
   margin-bottom: 1rem;
+}
+#form-container-contact {
+  right: 10rem;
+  top: 32rem;
+  width: 300px;
+  padding: 20px;
+  background: #ffffff;
+  color: green;
+  border-radius: 5px;
+  transition: opacity 1s ease;
+}
+
+.hidden-contact {
+  opacity: 0;
+}
+
+.header-sm-2 {
+  min-height: 40vh;;
 }

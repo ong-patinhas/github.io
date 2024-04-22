@@ -68,8 +68,8 @@
                 <h2>Ajude a ONG SOS Patinhas</h2>
                 <span>Animais de estimação são capazes de dar amor, sem esperar nada em troca. Por isso são considerados, de fato, nossos melhores amigos. Mas muitos deles nunca se sentiram cuidados e amados.
                 </span>
-                <form class="flex" action="donations.html">                    
-                    <input type="number" class="form-control" placeholder="Valor (R$)">
+                <form id="formDoacao" class="flex" action="donations.html">
+                    <input id="valorDoacao" type="number" class="form-control" placeholder="Insira um valor">
                     <input type="submit" class="btn" value="Doar">
                 </form>
             </div>
@@ -337,6 +337,7 @@
                 </ul>
             </div>
 
+            <div id="form-container-footer" class="hidden-form-footer"></div>
             <div class="subscribe-form footer-item">
                 <h2>Se inscreva para conhecer mais sobre nosso trabalho!</h2>
                 <form class="flex">
