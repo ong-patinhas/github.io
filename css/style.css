@@ -636,6 +636,25 @@ footer .site-brand {
   opacity: 0.3;
 }
 
+#form-container-footer {
+  /* margin: 5px; */
+  position: absolute;
+  right: 10rem;
+  top: 2rem;
+  width: 300px;
+  padding: 20px;
+  background: #ffffff;
+  color: green;
+  /* border: 2px solid #ccc; */
+  border-radius: 5px;
+  transition: opacity 1s ease;
+}
+
+.hidden-form-footer {
+  opacity: 0;
+}
+
+
 /* ### GALLERY PAGE ### */
 header.header-sm {
   min-height: 60vh;
@@ -1244,9 +1263,12 @@ header.header-sm {
   color: green;
   border-radius: 5px;
   transition: opacity 1s ease;
-  opacity: 1;
 }
 
 .hidden-contact {
   opacity: 0;
+}
+
+.header-sm-2 {
+  min-height: 40vh;;
 }

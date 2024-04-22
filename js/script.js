@@ -50,3 +50,55 @@ article.forEach((story) => {
     button.textContent = text;
   });
 });
+
+// função para validar formulário de inscrição na ong
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('.subscribe-form form');
+    const emailInput = document.querySelector('.subscribe-form input[type="email"]');
+    const formContainer = document.getElementById('form-container-footer');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        if (!validateEmail(emailInput.value)) {
+            alert('Por favor, insira um email válido.');
+            return;
+        }
+        // Aqui você pode enviar o formulário
+        formContainer.innerHTML = '<p>✅ Incrição realizada com Sucesso!</p>';
+        formContainer.classList.remove('hidden-form-footer');
+        // Limpar o campo de e-mail após o envio bem-sucedido
+        emailInput.value = '';
+        // Esconder o formulário após 3 segundos
+        setTimeout(function () {
+            formContainer.classList.add('hidden-form-footer');
+        }, 3000);
+    });
+
+    function validateEmail(email) {
+        // Expressão regular para validar o formato do e-mail
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('formDoacao');
+    const valorInput = document.getElementById('valorDoacao');
+    
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); 
+        
+        if (valorInput.value.trim() === '') {
+            alert('Por favor, insira um valor para doar.');
+            return;
+        }
+        
+        if (parseFloat(valorInput.value) <= 0.1) {
+            alert('Por favor, insira um valor maior que R$ 0,10 para doar.');
+            return;
+        }
+        
+        form.submit();
+        valorInput.value = '';
+    });
+});
